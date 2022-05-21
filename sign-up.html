@@ -87,5 +87,29 @@
     ></script>
     <script src="js/shared.js"></script>
     <script type="module" src="js/sign-up.js"></script>
+    <noscript>
+      <style>
+        html {
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          align-items: center;
+          justify-content: center;
+        }
+
+        section,
+        .main-nav,
+        .mobile-nav {
+          display: none;
+        }
+
+        .no-js {
+          padding: 20px;
+          font-size: 2rem;
+          background-color: rgb(165, 210, 210);
+        }
+      </style>
+      <div class="no-js">Enable Javascript!!!!</div>
+    </noscript>
   </body>
 </html>
