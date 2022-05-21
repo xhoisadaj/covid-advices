@@ -1,0 +1,123 @@
+#results {
+  width: 800px;
+  max-width: 80%;
+  margin: 0 auto;
+  /*margin-top: 30px;*/
+}
+
+#results img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.back-button {
+  background-color: #102ded;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(155, 160, 83, 0.872),
+      rgba(62, 226, 169, 0.8)
+    ),
+    url(/images/coronavirus_image_thin.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+
+h1 {
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30px;
+  margin: 50px 20px 20px 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    align-items: center;
+    margin: 50px 20px 20px 250px;
+  }
+  #results img {
+    width: 110%;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .back-button {
+    background-color: #102ded;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    align-items: center;
+    margin: 50px 20px 20px 180px;
+    /* margin-bottom: 30px; */
+  }
+  #results img {
+    width: 110%;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .back-button {
+    background-color: #102ded;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    align-items: center;
+    margin: 50px 20px 20px 23px;
+    /* margin-bottom: 30px; */
+  }
+
+  .back-button {
+    background-color: #102ded;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+}

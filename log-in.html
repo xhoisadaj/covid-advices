@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid-Advicer</title>
+    <link rel="shortcut icon" href="images/covid-19-fav.jpg">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/log-in.css">
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <header class="main-header">
+        <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+            <a href="home.html" class="main-header__brand">
+                <img src="images/COVID-19.png" alt="logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item main-nav__item--cta">
+                    <a href="log-in.html">Log in</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="log-in.html">Log in </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Please Login</h1>
+        <form id="login-form" >
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+          </div>
+  
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" >
+          </div>
+  
+          <button class="btn">Login</button>
+  
+          <p class="text">Don't have an account? <a href="sign-up.html">Register</a> </p>
+        </form>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> 
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+      integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/shared.js"></script>
+    <script type="module" src="/js/log-in.js"></script>
+    <noscript>Enable Javascript!!!</noscript>
+
+</body>
+
+</html>

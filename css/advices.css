@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Noto Sans;
+  src: url(/fonts/NotoSans-Medium.ttf);
+}
+html {
+  background-color: white;
+  overflow-wrap: break-word;
+}
+
+ul,
+p {
+  margin-top: 10px;
+}
+.big-container {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.info .image {
+  width: 35%;
+  margin: 15px;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+  animation: fade-left 1s ease-in;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 3s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.info .image img {
+  width: 100%;
+}
+
+.info .header {
+  width: 55%;
+  text-align: justify;
+}
+
+.header li {
+  font-size: 1.2rem;
+  font-family: Noto Sans;
+}
+.header p {
+  font-size: 1.2rem;
+  font-family: Noto Sans;
+}
+
+@media screen and (max-width: 800px) {
+  .info .image {
+    width: 75%;
+  }
+  .info .header {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  section {
+    margin-top: 40px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .big-container .info:first-child,
+  .big-container .info:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
+  .info .header {
+    width: 100%;
+    text-align: left;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .info .image {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .info .image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-Advicer</title>
+    <link rel="shortcut icon" href="/images/covid-19-fav.jpg" />
+    <lin
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/statistics.css" />
+    <link rel="stylesheet" href="css/shared.css" />
+  </head>
+
+  <body>
+    <div class="backdrop"></div>
+    <div class="background"></div>
+    <header class="main-header">
+      <div>
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a href="home.html" class="main-header__brand">
+          <img src="../images/COVID-19.png" alt="logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="statistics.html"
+              >Statistics <img style="width: 15px" src="images/stat.png" alt=""
+            /></a>
+          </li>
+          <li class="main-nav__item">
+            <a href="advices.html"
+              >Advices <img style="width: 20px" src="images/advice.png" alt=""
+            /></a>
+          </li>
+          <li class="main-nav__item main-nav__item--cta">
+            <a class="logout" href="log-in.html">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="statistics.html"
+            >Statistics <img style="width: 15px" src="images/stat.png" alt=""
+          /></a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="advices.html">Advices</a>
+        </li>
+        <li class="mobile-nav__item mobile-nav__item--cta">
+          <a class="logout-1" href="log-in.html">Logout</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="big-container">
+      <div class="container">
+        <h2>
+          COVID -19 Cases in <span id="country"></span> <img src="" id="flag" />
+        </h2>
+        <!-- <label for="countries">Choose your Country:</label>
+            <select id="countries" onchange="getSelectedValue();" ></select> -->
+        <div class="board">
+          <div class="card a">
+            <i class="fa fa-tachometer"></i>
+            <h5>Active Cases</h5>
+            <span id="active"></span>
+          </div>
+          <div class="card ca">
+            <i class="fa fa-th-list"></i>
+            <h5>Total Cases</h5>
+            <span id="cases"></span>
+          </div>
+          <div class="card cr">
+            <i class="fa fa-times-circle"></i>
+            <h5>Critical Cases</h5>
+            <span id="critical"></span>
+          </div>
+          <div class="card d">
+            <i class="fa fa-times"></i>
+            <h5>Total Deaths</h5>
+            <span id="death"></span>
+          </div>
+          <div class="card r">
+            <i class="fa fa-check-square-o"></i>
+            <h5>Recovered Cases</h5>
+            <span id="recovered"></span>
+          </div>
+          <div class="card t">
+            <i class="fa fa-eye"></i>
+            <h5>Total Testes Done</h5>
+            <span id="tests"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>
+          COVID -19 Cases in <span id="country-1"></span>
+          <img src="../images/european-union.png" id="flag" />
+        </h2>
+        <!-- <label for="countries">Choose your Country:</label>
+        <select id="countries" onchange="getSelectedValue();" ></select> -->
+        <div class="board">
+          <div class="card a">
+            <i class="fa fa-tachometer"></i>
+            <h5>Active Cases</h5>
+            <span id="active-1"></span>
+          </div>
+          <div class="card ca">
+            <i class="fa fa-th-list"></i>
+            <h5>Total Cases</h5>
+            <span id="cases-1"></span>
+          </div>
+          <div class="card cr">
+            <i class="fa fa-times-circle"></i>
+            <h5>Critical Cases</h5>
+            <span id="critical-1"></span>
+          </div>
+          <div class="card d">
+            <i class="fa fa-times"></i>
+            <h5>Total Deaths</h5>
+            <span id="death-1"></span>
+          </div>
+          <div class="card r">
+            <i class="fa fa-check-square-o"></i>
+            <h5>Recovered Cases</h5>
+            <span id="recovered-1"></span>
+          </div>
+          <div class="card t">
+            <i class="fa fa-eye"></i>
+            <h5>Total Testes Done</h5>
+            <span id="tests-1"></span>
+          </div>
+        </div>
+        <div class="button-graph">
+          <a href="graph.html" id="button-graph" class="button"
+            >Statistics for countries</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="js/shared.js"></script>
+
+    <script src="js/statistics.js"></script>
+  </body>
+</html>
